@@ -3,45 +3,44 @@ layout: default
 title: Movies&amp;Stuff
 ---
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <div class="container">
-    <button class="navbar-toggler hidden-lg-up float-xs-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive">
-    </button>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded container">
+  <button class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <h1>
-      <a class="navbar-brand" href="#">Movies&amp;Stuff</a>
-    </h1>
+  <h1>
+    <a class="navbar-brand" href="#">Movies&amp;Stuff</a>
+  </h1>
 
-    <div class="collapse navbar-collapse navbar-toggleable-md"
-         id="navbarResponsive">
-      <ul class="nav navbar-nav float-lg-right">
-        <li class="nav-item">
-          <a class="nav-link" href="#movies">Movies</a>
-        </li>
+  <div class="collapse navbar-collapse justify-content-end"
+       id="navbarToggler">
+    <ul class="navbar-nav mt-2 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#movies">Movies</a>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#tv-shows">TV Shows</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tv-shows">TV Shows</a>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link btn" href="#subscribe">Subscribe</a>
-        </li>
-      </ul>
-    </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#subscribe">Subscribe</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 <header class="featured">
   <div class="container">
-    <div class="row">
-      <article class="featured-movie">
+    <article class="featured-movie">
+      <div class="row">
         <figure class="featured-movie-poster col-md-3 offset-md-2">
           <img src="{{root}}images/deadpool-preview.jpg"
                alt="deadpool-preview"
-               class="img-fluid float-xs-left">
+               class="img-fluid">
         </figure>
 
         <section class="featured-movie-information col-md-7">
@@ -66,8 +65,8 @@ title: Movies&amp;Stuff
             <time datetime="2016-02-12">12 February 2016</time>
           </footer>
         </section>
-      </article>
-    </div>
+      </div>
+    </article>
   </div>
 </header>
 
@@ -84,7 +83,7 @@ title: Movies&amp;Stuff
     </div>
 
     <div class="row">
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/the-martian-preview.jpg"
                class="img-fluid"
@@ -93,7 +92,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/inside-out-preview.jpg"
                class="img-fluid"
@@ -102,7 +101,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/jurassic-world-preview.jpg"
                class="img-fluid"
@@ -111,7 +110,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/mad-max-preview.jpg"
                class="img-fluid"
@@ -120,7 +119,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/star-wars-force-awakens-preview.jpg"
                class="img-fluid"
@@ -129,7 +128,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="movie-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/avengers-age-of-ultron-preview.jpg"
                class="img-fluid"
@@ -140,8 +139,6 @@ title: Movies&amp;Stuff
     </div>
   </div>
 </section>
-
-<hr>
 
 <section id="tv-shows" class="popular-tv-shows">
   <div class="container">
@@ -156,7 +153,7 @@ title: Movies&amp;Stuff
     </div>
 
     <div class="row">
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/walking-dead-preview.jpg"
                class="img-fluid"
@@ -165,7 +162,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/game-of-thrones-preview.jpg"
                class="img-fluid"
@@ -174,7 +171,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/breaking-bad-preview.jpg"
                class="img-fluid"
@@ -183,7 +180,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/empire-preview.jpg"
                class="img-fluid"
@@ -192,7 +189,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/master-of-none-preview.jpg"
                class="img-fluid"
@@ -201,7 +198,7 @@ title: Movies&amp;Stuff
         </a>
       </div>
 
-      <div class="tv-show-item col-lg-2 col-xs-5 col-sm-4">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
         <a href="#">
           <img src="{{root}}images/mr-robot-preview.jpg"
                class="img-fluid"
@@ -247,16 +244,15 @@ title: Movies&amp;Stuff
 
 <footer class="site-footer">
   <div class="container">
-    <div class="row">
-      <h4>MOVIES&amp;STUFF</h4>
+    <h4>MOVIES&amp;STUFF</h4>
+
+    <p>
+      <small>&copy;2016 Movies &amp; Stuff. All Rights Reserved.</small>
 
       <small>
-        <p>&copy;2016 Movies &amp; Stuff. All Rights Reserved.</p>
-
         <a href="#">Terms of service</a>
-
         <a href="#">Privacy Policy</a>
       </small>
-    </div>
+    </p>
   </div>
 </footer>

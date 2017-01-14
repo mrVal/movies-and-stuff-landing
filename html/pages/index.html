@@ -1,4 +1,258 @@
 ---
 layout: default
-title: Home
+title: Movies&amp;Stuff
 ---
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded container">
+  <button class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <h1>
+    <a class="navbar-brand" href="#">Movies&amp;Stuff</a>
+  </h1>
+
+  <div class="collapse navbar-collapse justify-content-end"
+       id="navbarToggler">
+    <ul class="navbar-nav mt-2 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#movies">Movies</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#tv-shows">TV Shows</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#subscribe">Subscribe</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="featured">
+  <div class="container">
+    <article class="featured-movie">
+      <div class="row">
+        <figure class="featured-movie-poster col-md-3 offset-md-2">
+          <img src="{{root}}images/deadpool-preview.jpg"
+               alt="deadpool-preview"
+               class="img-fluid">
+        </figure>
+
+        <section class="featured-movie-information col-md-7">
+          <h2 class="featured-movie-title">Deadpool</h2>
+
+          <div class="featured-movie-rating">
+            <img src="{{root}}images/rating-star.png" alt="a rating star-1">
+            <img src="{{root}}images/rating-star.png" alt="a rating star-2">
+            <img src="{{root}}images/rating-star.png" alt="a rating star-3">
+            <img src="{{root}}images/rating-star.png" alt="a rating star-4">
+            <img src="{{root}}images/rating-star.png" alt="a rating star-5">
+          </div>
+
+          <p class="featured-movie-description">
+            A former Special Forces operative turned mercenary is subjected
+             to a rogue experiment that leaves him with accelerated healing
+             powers, adopting the alter ego Deadpool.
+          </p>
+
+          <footer class="featured-movie-details">
+            R | 108 min | Action Adeventure, Comedy |
+            <time datetime="2016-02-12">12 February 2016</time>
+          </footer>
+        </section>
+      </div>
+    </article>
+  </div>
+</header>
+
+<section id="movies" class="popular-movies">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <h2>Popular Movies</h2>
+      </div>
+
+      <div class="col-md-2 offset-md-6">
+        <a href="#">View All Movies</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/the-martian-preview.jpg"
+               class="img-fluid"
+               alt="the martian preview"
+               title="the martian">
+        </a>
+      </div>
+
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/inside-out-preview.jpg"
+               class="img-fluid"
+               alt="inside out preview"
+               title="inside out">
+        </a>
+      </div>
+
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/jurassic-world-preview.jpg"
+               class="img-fluid"
+               alt="jurassic world preview"
+               title="jurassic world">
+        </a>
+      </div>
+
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/mad-max-preview.jpg"
+               class="img-fluid"
+               alt="mad max preview"
+               title="mad max">
+        </a>
+      </div>
+
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/star-wars-force-awakens-preview.jpg"
+               class="img-fluid"
+               alt="star wars force awakens preview"
+               title="star wars the force awakens">
+        </a>
+      </div>
+
+      <div class="movie-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/avengers-age-of-ultron-preview.jpg"
+               class="img-fluid"
+               alt="avengers age of ultron preview"
+               title="avengers age of ultron">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tv-shows" class="popular-tv-shows">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <h2>Popular TV Shows</h2>
+      </div>
+
+      <div class="col-md-2 offset-md-6">
+        <a href="#">View All TV Shows</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/walking-dead-preview.jpg"
+               class="img-fluid"
+               alt="walking dead preview"
+               title="walking dead">
+        </a>
+      </div>
+
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/game-of-thrones-preview.jpg"
+               class="img-fluid"
+               alt="game of thrones preview"
+               title="game of thrones">
+        </a>
+      </div>
+
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/breaking-bad-preview.jpg"
+               class="img-fluid"
+               alt="breaking bad preview"
+               title="breaking bad">
+        </a>
+      </div>
+
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/empire-preview.jpg"
+               class="img-fluid"
+               alt="empire preview"
+               title="empire">
+        </a>
+      </div>
+
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/master-of-none-preview.jpg"
+               class="img-fluid"
+               alt="master of none preview"
+               title="master of none">
+        </a>
+      </div>
+
+      <div class="tv-show-item col-lg-2 col-5 col-sm-4">
+        <a href="#">
+          <img src="{{root}}images/mr-robot-preview.jpg"
+               class="img-fluid"
+               alt="mr robot preview"
+               title="mr robot">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<form id="subscribe" class="subscribe-form">
+  <div class="container">
+    <fieldset class="form-group">
+      <div class="row">
+        <legend>
+          Get the best Movie &amp; TV Show trailes
+          straight in your inbox each week.
+        </legend>
+      </div>
+
+      <div class="row form-inline">
+        <input class="form-control"
+               type="text"
+               name="username"
+               placeholder="First Name">
+
+        <input class="form-control"
+               type="email"
+               name="email-address"
+               placeholder="Email address">
+      </div>
+    </fieldset>
+
+    <div class="row">
+      <input class="btn btn-primary subscribe-button"
+             type="submit"
+             name="submit"
+             value="Subscribe">
+    </div>
+  </div>
+</form>
+
+<footer class="site-footer">
+  <div class="container">
+    <h4>MOVIES&amp;STUFF</h4>
+
+    <p>
+      <small>&copy;2016 Movies &amp; Stuff. All Rights Reserved.</small>
+
+      <small>
+        <a href="#">Terms of service</a>
+        <a href="#">Privacy Policy</a>
+      </small>
+    </p>
+  </div>
+</footer>

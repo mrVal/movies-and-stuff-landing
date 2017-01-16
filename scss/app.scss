@@ -1,2 +1,346 @@
 @import "includes/variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+$link-color:             #8b8b9f;
+
 @import "includes/bootstrap";
+
+/*custom colors*/
+$nav-bgr-color:                           #fff;
+$featured-description-color:              #999999;
+$subscribe-bgr-color:                     #2a2a2e;
+$form-control-enabled-color:              rgba(255, 255, 255, 0.1);
+$subscribe-btn-color:                     #6ee495;
+$headers-color:                           #242429;
+$section-divider-color:                   rgba(0, 0, 0, 0.17);
+$subscribe-form-text-color:               grey;
+$white-text-color:                        #fff;
+/*custom font-sizes*/
+$navbar-brand-font-size:                  16.71px;
+$nav-link-font-size:                      12.44px;
+$featured-movie-title-font-size:          27.36px;
+$featured-movie-details-font-size:        11.49px;
+$h2-font-size:                            20px;
+$h4-font-size:                            16.71px;
+$featured-description-font-size:          13.38px;
+$form-legend-font-size:                   27.36px;
+$footer-small-font-size:                  10.7px;
+
+  .navbar {
+    background-color: $nav-bgr-color;
+  }
+
+  .navbar h1 {
+    height: 30px;
+    line-height: 13px;
+    margin: auto 0;
+  }
+
+  .navbar-toggler {
+    margin-top: -5px;
+  }
+
+  .navbar-brand {
+    color:  $headers-color;
+    font-size: $navbar-brand-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .brand-ampersand {
+    font-weight: 400;
+  }
+
+  .featured {
+    background-image: url("../images/featured-deadpool-background.jpg");
+    color: $white-text-color;
+    background-repeat: no-repeat;
+    /*to prevent stretching if the viewport gets larger than 1366px to keep
+    it consistent with the background image */
+    max-width: 1336px;
+  }
+
+  .featured-movie {
+    min-height: 529px;
+  }
+
+  .featured-movie-poster {
+    text-align: center;
+    padding: 0;
+    margin: 2% auto;
+  }
+
+  .featured-movie-poster img {
+    max-width: 200px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 36px rgba(0,0,0,0.47);
+  }
+
+  .featured-movie-information {
+    @include clearfix;
+    margin-top: 5px;
+  }
+
+  .featured-movie-title {
+    font-size: $featured-movie-title-font-size;
+    font-weight: 300;
+    width:117px;
+    margin: 0;
+    float:left;
+  }
+
+  .featured-movie-rating {
+    display: inline-block;
+    float: right;
+  }
+
+  .featured-movie-rating img {
+    width: 19px;
+    height: 18px;
+    margin-left: 5px;
+  }
+
+  .featured-movie-description {
+    margin-top: 30px;
+    width: 100%;
+    text-align: justify;
+    color: $featured-description-color;
+  }
+
+  .featured-movie-details {
+    color:  $white-text-color;
+    font-size: $featured-movie-details-font-size;
+    font-weight: 700;
+  }
+
+  .popular-movies {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: $section-divider-color;
+  }
+
+  .popular-movies h2 {
+    font-size: $h2-font-size;
+    color:  #2a2a2e;
+    font-weight: 300;
+  }
+
+  .popular-movies-header {
+    @include clearfix;
+    width: 100%;
+  }
+
+  .popular-movies-header h2 {
+    float: left;
+    color:  $headers-color;
+    font-size: $h2-font-size;
+    font-weight: 300;
+  }
+
+  .popular-movies-header a {
+    float: right;
+  }
+
+  .movie-item {
+    margin: 1% auto;
+  }
+
+  .popular-tv-shows {
+    margin: 5% auto;
+  }
+
+  .popular-tv-shows h2 {
+    font-size: $h2-font-size;
+  }
+
+  .popular-tv-shows-header {
+    @include clearfix;
+    width: 100%;
+  }
+
+  .popular-tv-shows-header h2 {
+    float: left;
+    color:  $headers-color;
+    font-size: $h2-font-size;
+    font-weight: 300;
+  }
+
+  .popular-tv-shows-header a {
+    float: right;
+  }
+
+  .tv-show-item {
+    margin: 1% auto;
+  }
+
+  .subscribe-form {
+    background-color: $subscribe-bgr-color;
+    height: 410px;
+    /*to prevent stretching if the viewport gets larger than 1366px to keep
+    it consistent with the background image */
+    max-width: 1366px;
+  }
+
+  .form-group {
+    text-align: center;
+  }
+
+  .form-group legend {
+    margin: auto;
+    color:  $white-text-color;
+    font-weight: 300;
+  }
+
+  .form-inline {
+    display: inline-block;
+    margin: 52px auto 0 auto;
+  }
+
+  .form-control {
+    border-radius: 5px;
+    height: 50px;
+  }
+
+  input.form-control:enabled {
+    background: $form-control-enabled-color;
+    color: $subscribe-form-text-color;
+  }
+
+  .subscribe-button {
+    border-width: 0;
+    background: $subscribe-btn-color;
+    border-radius: 30px;
+    font-weight: 700;
+    width: 210px;
+    height: 58px;
+    margin-top: 58px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .site-footer {
+    margin: 40px 0 70px 0;
+    text-align: center;
+  }
+
+  .site-footer h4 {
+    color:  $headers-color;
+    font-size: $h4-font-size;
+    font-weight: 700;
+  }
+
+  .site-footer small {
+    color:  $link-color;
+    font-size: $footer-small-font-size;
+    font-weight: 400;
+  }
+
+@media all and (min-width: 768px) {
+
+  .featured-movie-poster {
+    margin-top: 80px;
+  }
+
+  .featured-movie-poster img {
+    max-width: 247px;
+  }
+
+  .featured-movie-information {
+    margin-top: 175px;
+  }
+
+  .featured-movie-rating {
+    float: none;
+    margin-left: 18px;
+  }
+
+  .featured-movie-description {
+    margin-top: 10px;
+  }
+
+  .form-group {
+    text-align: center;
+    margin: auto;
+  }
+
+  .form-group legend {
+    width: 461px;
+    height: 68px;
+    font-size: $form-legend-font-size;
+  }
+}
+
+@media all and (min-width: 992px) {
+
+  .navbar {
+    height: 82px;
+  }
+
+  .nav-link {
+    font-size: $nav-link-font-size;
+  }
+
+  .featured-movie-poster {
+    margin: 80px auto 80px 210px;
+  }
+
+  .featured-movie-description {
+    font-size: $featured-description-font-size;
+    width: 416px;
+    height: 65px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .featured-movie-details {
+    margin-top: 35px;
+  }
+
+  .popular-movies {
+    margin-top: 90px;
+    padding-bottom: 94px;
+  }
+
+  .popular-movies a {
+    font-size: 12.44px;
+    font-weight: 400;
+  }
+
+  .popular-tv-shows {
+    margin-top: 94px;
+    margin-bottom: 100px;
+  }
+
+  .popular-tv-shows a {
+    font-size: 12.44px;
+    font-weight: 400;
+  }
+
+  .subscribe-form {
+    padding-top: 107px;
+    padding-bottom: 115px;
+    height: 510px;
+  }
+
+  .form-control {
+    margin: 0 8px;
+    width: 250px;
+  }
+
+}
+/*to prevent stretching of the background and form if the viewport gets larger
+ than 1366px */
+@media all and (min-width: 1367px) {
+
+  .featured {
+    margin: auto;
+  }
+
+  .subscribe-form {
+    margin: auto;
+  }
+}

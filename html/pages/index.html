@@ -12,7 +12,9 @@ title: Movies&amp;Stuff
   </button>
 
   <h1>
-    <a class="navbar-brand" href="#">Movies&amp;Stuff</a>
+    <a class="navbar-brand" href="#">
+      Movies<span class="brand-ampersand">&amp;</span>Stuff
+    </a>
   </h1>
 
   <div class="collapse navbar-collapse justify-content-end"
@@ -43,7 +45,7 @@ title: Movies&amp;Stuff
                class="img-fluid">
         </figure>
 
-        <section class="featured-movie-information col-md-7">
+        <section class="featured-movie-information col-md-6">
           <h2 class="featured-movie-title">Deadpool</h2>
 
           <div class="featured-movie-rating">
@@ -51,7 +53,8 @@ title: Movies&amp;Stuff
             <img src="{{root}}images/rating-star.png" alt="a rating star-2">
             <img src="{{root}}images/rating-star.png" alt="a rating star-3">
             <img src="{{root}}images/rating-star.png" alt="a rating star-4">
-            <img src="{{root}}images/rating-star.png" alt="a rating star-5">
+            <img src="{{root}}images/rating-star-inactive.png"
+                 alt="a rating star-5">
           </div>
 
           <p class="featured-movie-description">
@@ -73,13 +76,11 @@ title: Movies&amp;Stuff
 <section id="movies" class="popular-movies">
   <div class="container">
     <div class="row mt-3">
-      <div class="col-md-4">
+      <header class="popular-movies-header">
         <h2>Popular Movies</h2>
-      </div>
 
-      <div class="col-md-2 offset-md-6">
         <a href="#">View All Movies</a>
-      </div>
+      </header>
     </div>
 
     <div class="row">
@@ -143,13 +144,11 @@ title: Movies&amp;Stuff
 <section id="tv-shows" class="popular-tv-shows">
   <div class="container">
     <div class="row mt-3">
-      <div class="col-md-4">
+      <header class=" popular-tv-shows-header">
         <h2>Popular TV Shows</h2>
-      </div>
 
-      <div class="col-md-2 offset-md-6">
         <a href="#">View All TV Shows</a>
-      </div>
+      </header>
     </div>
 
     <div class="row">
@@ -210,7 +209,7 @@ title: Movies&amp;Stuff
   </div>
 </section>
 
-<form id="subscribe" class="subscribe-form">
+<form id="subscribe" class="subscribe-form" method="post">
   <div class="container">
     <fieldset class="form-group">
       <div class="row">
@@ -247,7 +246,7 @@ title: Movies&amp;Stuff
     <h4>MOVIES&amp;STUFF</h4>
 
     <p>
-      <small>&copy;2016 Movies &amp; Stuff. All Rights Reserved.</small>
+      <small>&copy;2016 Movies &amp; Stuff. All Rights Reserved.</small><br>
 
       <small>
         <a href="#">Terms of service</a>

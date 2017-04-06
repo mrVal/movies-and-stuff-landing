@@ -8,18 +8,19 @@ $link-color:             #8b8b9f;
 @import "includes/bootstrap";
 
 /*custom colors*/
-$nav-bgr-color:                           #fff;
-$featured-description-color:              #999999;
-$subscribe-bgr-color:                     #2a2a2e;
-$form-control-enabled-color:              rgba(255, 255, 255, 0.1);
+$nav-bg-color:                           #fff;
+$featured-description-color:              #999;
+$subscribe-bg-color:                     #2a2a2e;
+$form-control-enabled-color:              rgba(#fff,.1);
 $subscribe-btn-color:                     #6ee495;
 $headers-color:                           #242429;
-$section-divider-color:                   rgba(0, 0, 0, 0.17);
+$section-divider-color:                   rgba(#000,.17);
 $subscribe-form-text-color:               grey;
 $white-text-color:                        #fff;
 /*custom font-sizes*/
 $navbar-brand-font-size:                  16.71px;
 $nav-link-font-size:                      12.44px;
+$view-all-links-font-size:                12.44px;
 $featured-movie-title-font-size:          27.36px;
 $featured-movie-details-font-size:        11.49px;
 $h2-font-size:                            20px;
@@ -28,43 +29,37 @@ $featured-description-font-size:          13.38px;
 $form-legend-font-size:                   27.36px;
 $footer-small-font-size:                  10.7px;
 
-  .navbar {
-    background-color: $nav-bgr-color;
-  }
+  .navbar { background-color: $nav-bg-color; }
 
   .navbar h1 {
     height: 30px;
-    line-height: 13px;
     margin: auto 0;
+    line-height: .4;
   }
 
-  .navbar-toggler {
-    margin-top: -5px;
-  }
+  .navbar-toggler { margin-top: -5px; }
 
   .navbar-brand {
-    color:  $headers-color;
     font-size: $navbar-brand-font-size;
     font-weight: 700;
+    color:  $headers-color;
     text-transform: uppercase;
   }
 
-  .brand-ampersand {
-    font-weight: 400;
-  }
+  .brand-ampersand { font-weight: 400; }
 
   .featured {
+    /*
+    * To prevent stretching if the viewport gets larger than 1366px to keep
+    * it consistent with the background image
+    */
+    max-width: 1336px;
     background-image: url("../images/featured-deadpool-background.jpg");
     color: $white-text-color;
     background-repeat: no-repeat;
-    /*to prevent stretching if the viewport gets larger than 1366px to keep
-    it consistent with the background image */
-    max-width: 1336px;
   }
 
-  .featured-movie {
-    min-height: 529px;
-  }
+  .featured-movie { min-height: 529px; }
 
   .featured-movie-poster {
     text-align: center;
@@ -75,7 +70,7 @@ $footer-small-font-size:                  10.7px;
   .featured-movie-poster img {
     max-width: 200px;
     border-radius: 3%;
-    box-shadow: 0px 0px 36px rgba(0,0,0,0.47);
+    box-shadow: 0 0 36px rgba(0, 0, 0, .47);
   }
 
   .featured-movie-information {
@@ -84,16 +79,16 @@ $footer-small-font-size:                  10.7px;
   }
 
   .featured-movie-title {
+    float: left;
+    width: 117px;
+    margin: 0;
     font-size: $featured-movie-title-font-size;
     font-weight: 300;
-    width:117px;
-    margin: 0;
-    float:left;
   }
 
   .featured-movie-rating {
-    display: inline-block;
     float: right;
+    display: inline-block;
   }
 
   .featured-movie-rating img {
@@ -103,16 +98,16 @@ $footer-small-font-size:                  10.7px;
   }
 
   .featured-movie-description {
-    margin-top: 30px;
     width: 100%;
+    margin-top: 30px;
     text-align: justify;
     color: $featured-description-color;
   }
 
   .featured-movie-details {
-    color:  $white-text-color;
     font-size: $featured-movie-details-font-size;
     font-weight: 700;
+    color: $white-text-color;
   }
 
   .popular-movies {
@@ -125,33 +120,30 @@ $footer-small-font-size:                  10.7px;
 
   .popular-movies h2 {
     font-size: $h2-font-size;
-    color:  #2a2a2e;
     font-weight: 300;
+    color: #2a2a2e;
+
   }
 
   .popular-movies-header {
+
     @include clearfix;
+
     width: 100%;
   }
 
   .popular-movies-header h2 {
     float: left;
-    color:  $headers-color;
     font-size: $h2-font-size;
     font-weight: 300;
+    color: $headers-color;
   }
 
-  .popular-movies-header a {
-    float: right;
-  }
+  .popular-movies-header a { float: right; }
 
-  .movie-item {
-    margin: 1% auto;
-  }
+  .movie-item { margin: 1% auto; }
 
-  .popular-tv-shows {
-    margin: 5% auto;
-  }
+  .popular-tv-shows { margin: 5% auto; }
 
   .popular-tv-shows h2 {
     font-size: $h2-font-size;
@@ -164,45 +156,41 @@ $footer-small-font-size:                  10.7px;
 
   .popular-tv-shows-header h2 {
     float: left;
-    color:  $headers-color;
     font-size: $h2-font-size;
     font-weight: 300;
+    color: $headers-color;
   }
 
-  .popular-tv-shows-header a {
-    float: right;
-  }
+  .popular-tv-shows-header a { float: right; }
 
-  .tv-show-item {
-    margin: 1% auto;
-  }
+  .tv-show-item { margin: 1% auto; }
 
   .subscribe-form {
-    background-color: $subscribe-bgr-color;
-    height: 410px;
-    /*to prevent stretching if the viewport gets larger than 1366px to keep
-    it consistent with the background image */
+    /*
+    * To prevent stretching if the viewport gets larger than 1366px to keep
+    * it consistent with the background image
+    */
     max-width: 1366px;
+    height: 410px;
+    background-color: $subscribe-bg-color;
   }
 
-  .form-group {
-    text-align: center;
-  }
+  .form-group { text-align: center; }
 
   .form-group legend {
     margin: auto;
-    color:  $white-text-color;
     font-weight: 300;
+    color: $white-text-color;
   }
 
   .form-inline {
     display: inline-block;
-    margin: 52px auto 0 auto;
+    margin: 52px auto 0;
   }
 
   .form-control {
-    border-radius: 5px;
     height: 50px;
+    border-radius: 5px;
   }
 
   input.form-control:enabled {
@@ -211,15 +199,15 @@ $footer-small-font-size:                  10.7px;
   }
 
   .subscribe-button {
-    border-width: 0;
-    background: $subscribe-btn-color;
-    border-radius: 30px;
-    font-weight: 700;
     width: 210px;
     height: 58px;
     margin-top: 58px;
     margin-right: auto;
     margin-left: auto;
+    border-width: 0;
+    font-weight: 700;
+    background: $subscribe-btn-color;
+    border-radius: 30px;
   }
 
   .site-footer {
@@ -228,39 +216,31 @@ $footer-small-font-size:                  10.7px;
   }
 
   .site-footer h4 {
-    color:  $headers-color;
     font-size: $h4-font-size;
     font-weight: 700;
+    color: $headers-color;
   }
 
   .site-footer small {
-    color:  $link-color;
     font-size: $footer-small-font-size;
     font-weight: 400;
+    color: $link-color;
   }
 
 @media all and (min-width: 768px) {
 
-  .featured-movie-poster {
-    margin-top: 80px;
-  }
+  .featured-movie-poster { margin-top: 80px; }
 
-  .featured-movie-poster img {
-    max-width: 247px;
-  }
+  .featured-movie-poster img { max-width: 247px; }
 
-  .featured-movie-information {
-    margin-top: 175px;
-  }
+  .featured-movie-information { margin-top: 175px; }
 
   .featured-movie-rating {
     float: none;
     margin-left: 18px;
   }
 
-  .featured-movie-description {
-    margin-top: 10px;
-  }
+  .featured-movie-description { margin-top: 10px; }
 
   .form-group {
     text-align: center;
@@ -276,29 +256,21 @@ $footer-small-font-size:                  10.7px;
 
 @media all and (min-width: 992px) {
 
-  .navbar {
-    height: 82px;
-  }
+  .navbar { height: 82px; }
 
-  .nav-link {
-    font-size: $nav-link-font-size;
-  }
+  .nav-link { font-size: $nav-link-font-size; }
 
-  .featured-movie-poster {
-    margin: 80px auto 80px 210px;
-  }
+  .featured-movie-poster { margin: 80px auto 80px 210px; }
 
   .featured-movie-description {
-    font-size: $featured-description-font-size;
     width: 416px;
     height: 65px;
     margin-top: 10px;
     margin-bottom: 0;
+    font-size: $featured-description-font-size;
   }
 
-  .featured-movie-details {
-    margin-top: 35px;
-  }
+  .featured-movie-details { margin-top: 35px; }
 
   .popular-movies {
     margin-top: 90px;
@@ -306,7 +278,7 @@ $footer-small-font-size:                  10.7px;
   }
 
   .popular-movies a {
-    font-size: 12.44px;
+    font-size: $view-all-links-font-size;
     font-weight: 400;
   }
 
@@ -316,19 +288,19 @@ $footer-small-font-size:                  10.7px;
   }
 
   .popular-tv-shows a {
-    font-size: 12.44px;
+    font-size: $view-all-links-font-size;
     font-weight: 400;
   }
 
   .subscribe-form {
+    height: 510px;
     padding-top: 107px;
     padding-bottom: 115px;
-    height: 510px;
   }
 
   .form-control {
-    margin: 0 8px;
     width: 250px;
+    margin: 0 8px;
   }
 
 }
@@ -336,11 +308,7 @@ $footer-small-font-size:                  10.7px;
  than 1366px */
 @media all and (min-width: 1367px) {
 
-  .featured {
-    margin: auto;
-  }
+  .featured { margin: auto; }
 
-  .subscribe-form {
-    margin: auto;
-  }
+  .subscribe-form { margin: auto; }
 }
